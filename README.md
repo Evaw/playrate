@@ -1,2 +1,2 @@
 # playrate
-chrome extension to change the video playback rate
+A chrome extension to change video playback rates

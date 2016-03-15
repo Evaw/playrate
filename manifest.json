@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
   "name": "playrate",
-  "version": "1.0",
+  "version": "1.0.2",
   "icons": {
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "description": "This extension modifies the playback rate of videos",
+  "description": "Speed up or slow down videos in your page: youtube, vimeo, and others that use standard html5 video",
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
