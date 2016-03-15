@@ -31,12 +31,12 @@
     }
     debounced = debounce(setToInput);
     rangeInput.addEventListener('change', setToInput);
+    rangeInput.addEventListener('mouseout', function () {
+      document.removeEventListener(debounced);
+    });
     rangeInput.addEventListener('mousedown', function () {
       rangeInput.addEventListener('mouseup', function () {
         document.removeEventListener('mousemove', debounced);
-      });
-      rangeInput.addEventListener('mouseout', function () {
-        document.removeEventListener(debounced);
       });
       document.addEventListener('mousemove', debounced);
     });
