@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "playrate",
+  "version": "1.0",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "description": "This extension modifies the playback rate of videos",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content-script.js"]
+    }
+
+  ],
+  "browser_action": {
+    "default_icon": "playrate.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
